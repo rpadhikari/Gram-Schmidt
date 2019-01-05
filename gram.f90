@@ -1,4 +1,8 @@
-program test
+! This program returns the orthogonal basis vectors out of non-orthogonal basis.
+! Author: Rajendra Adhikari
+! date: 5th Jan, 2019
+! Kathmandu University, Dhulikhel, Kavre, Nepal
+program GramS
   implicit none
   integer(4) i, j, n, k
 ! n is number of rows 
@@ -7,7 +11,7 @@ program test
   real(8) v(n,k), u(n,k)
   real(8), external :: dot
   u=0.0d0
-  open(1,file='in.dat', action='read')
+  open(1,file='in.dat', action='read') ! Please change the content of in.dat with your vectors
   do i=1, n
     read(1,*) (v(i,j),j=1,k)
   end do
@@ -25,5 +29,5 @@ program test
     write(*,10) (u(i,j), j=1,k)
   end do
   10 format(3f13.8)
-end program test
+end program GramS
 
