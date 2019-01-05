@@ -1,4 +1,8 @@
-function dot(x, y, n)
+! This function simply computes the dot product of two vectors.
+! Author: Rajendra Adhikar
+! Kathmandu University, Dhulikhel, Kavre Nepal
+! Date Jan 5th, 2019
+function dot(x, y, n)  ! x and y are arrays of length n
   implicit none
   real(8) dot
   real(8) val
