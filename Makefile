@@ -1,5 +1,5 @@
-FC=gfortran -c
-LD=gfortran
+FC=ifort -c
+LD=ifort
 SRC=dot.f90 gram.f90
 OBJ=dot.o gram.o
 gram:
